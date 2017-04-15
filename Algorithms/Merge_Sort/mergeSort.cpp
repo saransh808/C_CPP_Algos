@@ -31,28 +31,17 @@ void sort(int low, int high) {
       sort(low, mid);
       sort(mid+1, high);
       merging(low, mid, high);
-   } else { 
-      return;
-   }   
+   }  
 }
 
 int main() { 
    int i;
 	int n;
 	printf("Enter the number of elements"); 
-scanf("%d", &n);
-for(i=0;i<n;i++){
-	scanf("%d", &a[i] );
-}
-   printf("List before sorting\n");
-   
-   for(i = 0; i < n; i++)
-      printf("%d ", a[i]);
-
+	scanf("%d", &n);
+	for(i=0;i<n;i++)
+		scanf("%d", &a[i] );
    sort(0,n-1);
-
-   printf("\nList after sorting\n");
-   
    for(i = 0; i < n; i++)
       printf("%d ", a[i]);
 }
