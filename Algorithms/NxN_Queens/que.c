@@ -13,9 +13,9 @@ void print(int n){
                 printf(" Q");
             else
                 printf(" -");
-                }
-           }
-      }
+        }
+   }
+}
 
 int place(int row,int column){
     int i;

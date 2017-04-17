@@ -2,7 +2,7 @@
 float capacity;
 
 void KSS(int n, float w[], float p[], float c){
-	float tp,u=c;
+	float tp=0,u=c;
 	int i,j;
 	for(i=0;i<=n;i++){
 		if(w[i]>u)
@@ -28,7 +28,7 @@ int main(){
 	scanf("%d", &n);
 	int i;
 	for(i=0;i<n;i++){
-		printf("\nEnter Element %d", +1);
+		printf("\nEnter Element %d", i+1);
 		printf("\nEnter Size : ");
 		scanf("%f",&size[i]);
 		printf("\nEnter Value : ");
